@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title><% content 'title' %><%= @projectName %></title>
+  <script src="http://127.0.0.1:35729/livereload.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/dist/css/application.css" />
+  <script src="/dist/js/application.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+<% include '_header.html.ect' %>
+<main role="main" id="main">
+<% content %>
+</main>
+<% include '_footer.html.ect' %>
+<% content 'scripts' %>
+  </div>
+</body>
+</html>
